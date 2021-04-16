@@ -112,7 +112,7 @@ const jonas = {
     birthYeah : 1991,
     job : 'teacher',
     friends : ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense : true,
+    hasDriversLicense : false,
 
     // calcAge: function(birthYeah) {
     //     return 2037 - birthYeah;
@@ -127,13 +127,17 @@ const jonas = {
         return this.age;
     },
 
+    // getSummary: function() {
+    //     if (this.hasDriversLicense) {
+    //         console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has a driver's license`);
+    //     } else {
+    //         console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has no driver's license`);
+    //     }
+    // }
+
     getSummary: function() {
-        if (this.hasDriversLicense) {
-            console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has a driver's license`);
-        } else {
-            console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has no driver's license`);
-        }
+        return `${this.firstName} is a ${this.calcAge(this.birthYeah)}-years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
     }
 };
 
-jonas.getSummary();
+console.log(jonas.getSummary());
