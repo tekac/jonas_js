@@ -106,3 +106,34 @@
 // Jonas has 3 friends, and his best friend is Michel
 // 3 values are Jonas, 3 and Michael - Print this sentence without hard coding any of the values
 
+const jonas = {
+    firstName : 'Jonas',
+    lastName : 'Schmedtmann',
+    birthYeah : 1991,
+    job : 'teacher',
+    friends : ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense : true,
+
+    // calcAge: function(birthYeah) {
+    //     return 2037 - birthYeah;
+    // }
+
+    // calcAge: function() {
+    //     return 2037 - this.birthYeah;  //referencing object calling the method .. in this case "jonas" object 
+    // }
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYeah;   // makes new property 'age'
+        return this.age;
+    },
+
+    getSummary: function() {
+        if (this.hasDriversLicense) {
+            console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has a driver's license`);
+        } else {
+            console.log(`${this.firstName} is a ${this.calcAge(this.birthYeah)} year old teacher, and he has no driver's license`);
+        }
+    }
+};
+
+jonas.getSummary();
