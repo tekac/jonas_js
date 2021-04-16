@@ -39,7 +39,14 @@ const myCountry = {
     'country' : 'United States',
     'capital' : 'Washington DC',
     'language' : 'English',
-    'neighbours' : ['canada', 'mexico']
+    'neighbours' : ['canada', 'mexico'],
+    describe: function() {
+        return `${this.country} has ${populations[0]} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`;
+    },
+
+    checkIsIsland: function() {
+        return !this.neighbours ? myCountry.isIsland = true : myCountry.isIsland = false;
+    }
 };
 
 console.log(percentages);
@@ -55,5 +62,6 @@ myCountry.population = 333;
 console.log(myCountry.population);
 
 myCountry['population'] = 335;
-console.log(myCountry.population);
+
+console.log(myCountry.checkIsIsland());
 console.log(myCountry);
