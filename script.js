@@ -148,7 +148,7 @@
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting weights Repetition ${rep}`);
 // }
-
+/*
 const jonasArray = [
     'Jonas',
     'Schmedtmann',
@@ -190,4 +190,26 @@ for (let i = 0; i < jonasArray.length; i++) {
     if (typeof jonasArray[i] === 'number') break;   // CONTINUE 'CONTINUES' ONTO THE NEXT ITERATION, SKIPS != STRING
 
     console.log(jonasArray[i], typeof jonasArray[i]);
+}
+*/
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+
+///Iterating through a loop backwards
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+    console.log(jonasArray[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------Starting exercise ${exercise}`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight repetition ${rep}`);
+    }
 }
