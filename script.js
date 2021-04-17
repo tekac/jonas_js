@@ -106,13 +106,13 @@
 // Jonas has 3 friends, and his best friend is Michel
 // 3 values are Jonas, 3 and Michael - Print this sentence without hard coding any of the values
 
-const jonas = {
-    firstName : 'Jonas',
-    lastName : 'Schmedtmann',
-    birthYeah : 1991,
-    job : 'teacher',
-    friends : ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense : false,
+// const jonas = {
+//     firstName : 'Jonas',
+//     lastName : 'Schmedtmann',
+//     birthYeah : 1991,
+//     job : 'teacher',
+//     friends : ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense : false,
 
     // calcAge: function(birthYeah) {
     //     return 2037 - birthYeah;
@@ -122,10 +122,10 @@ const jonas = {
     //     return 2037 - this.birthYeah;  //referencing object calling the method .. in this case "jonas" object 
     // }
 
-    calcAge: function() {
-        this.age = 2037 - this.birthYeah;   // makes new property 'age'
-        return this.age;
-    },
+    // calcAge: function() {
+    //     this.age = 2037 - this.birthYeah;   // makes new property 'age'
+    //     return this.age;
+    // },
 
     // getSummary: function() {
     //     if (this.hasDriversLicense) {
@@ -135,9 +135,16 @@ const jonas = {
     //     }
     // }
 
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge(this.birthYeah)}-years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
-    }
-};
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge(this.birthYeah)}-years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+//     }
+// };
 
-console.log(jonas.getSummary());
+// console.log(jonas.getSummary());
+
+
+//// FOR LOOPS RUN WHILE CONDITION IS TRUE
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights Repetition ${rep}`);
+}

@@ -65,3 +65,7 @@ myCountry['population'] = 335;
 
 console.log(myCountry.checkIsIsland());
 console.log(myCountry);
+
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
