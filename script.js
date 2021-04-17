@@ -145,6 +145,49 @@
 
 //// FOR LOOPS RUN WHILE CONDITION IS TRUE
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights Repetition ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights Repetition ${rep}`);
+// }
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const types = [];
+
+// Reading from Jonas Array //
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+
+    // Filling Types Array //
+    // types[i] = typeof jonasArray[i];
+    types.push(typeof jonasArray[i]);
+}
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+//continue and break
+console.log('-----ONLY STRINGS-----')
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'string') continue;   // CONTINUE 'CONTINUES' ONTO THE NEXT ITERATION, SKIPS != STRING
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+console.log('-----BREAK WITH NUMBERS-----')
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] === 'number') break;   // CONTINUE 'CONTINUES' ONTO THE NEXT ITERATION, SKIPS != STRING
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
 }
