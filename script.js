@@ -193,23 +193,45 @@ for (let i = 0; i < jonasArray.length; i++) {
 }
 */
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
 
-///Iterating through a loop backwards
-for (let i = jonasArray.length - 1; i >= 0; i--) {
-    console.log(jonasArray[i]);
-}
+// ///Iterating through a loop backwards
+// for (let i = jonasArray.length - 1; i >= 0; i--) {
+//     console.log(jonasArray[i]);
+// }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`------Starting exercise ${exercise}`);
-    for (let rep = 1; rep < 6; rep++) {
-        console.log(`Lifting weight repetition ${rep}`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`------Starting exercise ${exercise}`);
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Lifting weight repetition ${rep}`);
+//     }
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights Repetition ${rep}`);
+// }
+
+// console.log('\n-------WHILE LOOPS------');
+// let rep = 1;
+
+// while (rep <= 10) {
+//     console.log(`Lifting weights repetition ${rep}`);
+//     rep++
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice != 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log(`You rolled a ${dice}`); continue;
     }
 }

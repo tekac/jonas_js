@@ -74,9 +74,24 @@ for (i = 0; i < populations.length; i++) {
 
 
 const listOfNeighbours = [
-    ['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia']
 ];
 
 for (i = 0; i < listOfNeighbours.length; i++) {
-    console.log(listOfNeighbours[i]);
-}
+    for (k = 0; k < listOfNeighbours[i].length; k++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][k]}`);
+        }
+    }
+
+    const percentages3 = []
+
+    let j = 0;
+    
+    while (j < populations.length) {
+        const perc = percentageOfWorld1(populations[j]);
+        percentages3.push(perc);
+        i++;
+    }
+    console.log(percentages3)
